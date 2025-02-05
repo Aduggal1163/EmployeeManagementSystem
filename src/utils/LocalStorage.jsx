@@ -4,6 +4,12 @@ const employees = [
     name:"Abhishek Duggal",
     email: "employee1@example.com",
     password: "123",
+    taskCounts:{
+      active:2,
+      newTask:1,
+      completed:1,
+      failed:0
+    },
     tasks: [
       {
         title: "Prepare Report",
@@ -42,6 +48,12 @@ const employees = [
     name:"Aastha",
     email: "employee2@example.com",
     password: "123",
+    taskCounts:{
+      active:12,
+      newTask:12,
+      completed:13,
+      failed:10
+    },
     tasks: [
       {
         title: "Code Review",
@@ -80,6 +92,12 @@ const employees = [
     name:"Karan",
     email: "employee3@example.com",
     password: "123",
+    taskCounts:{
+      active:3,
+      newTask:3,
+      completed:3,
+      failed:1
+    },
     tasks: [
       {
         title: "Marketing Strategy",
@@ -128,6 +146,12 @@ const employees = [
     name:"Ram",
     email: "employee4@example.com",
     password: "123",
+    taskCounts:{
+      active:2,
+      newTask:9,
+      completed:0,
+      failed:0
+    },
     tasks: [
       {
         title: "Database Optimization",
@@ -186,6 +210,12 @@ const employees = [
     name:"Kartik",
     email: "employee5@example.com",
     password: "123",
+    taskCounts:{
+      active:2,
+      newTask:1,
+      completed:1,
+      failed:0
+    },
     tasks: [
       {
         title: "Product Testing",
