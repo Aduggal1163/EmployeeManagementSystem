@@ -7,22 +7,22 @@ import FailedTask from "./FailedTask";
 const TaskList = ({data}) => {
   return (
     <div id="tasklist" className="h-[55%] overflow-x-auto flex items-center justify-start gap-6 flex-nowrap h-[56%] w-full py-5  mt-10">
-      {data.tasks.map((elt)=>{
+      {data.tasks.map((elt, idx)=>{
         if(elt.active)
         {
-          return <AcceptTask/>
+          return <AcceptTask key={idx} data={elt}/>
         }
         if(elt.newTask)
         {
-          return <NewTask/>
+          return <NewTask key={idx} data={elt}/>
         }
         if(elt.completed)
         {
-          return <CompleteTask/>
+          return <CompleteTask key={idx} data={elt}/>
         }
         if(elt.Failed)
         {
-          return <FailedTask/>
+          return <FailedTask key={idx} data={elt}/>
         }
       })}
     </div>
